@@ -1,0 +1,8 @@
+block('screen').elem('inner').elemMod('half', true)(
+    def()(function(){
+        return applyCtx({
+            block: 'row',
+            content: this.ctx
+        })
+    })
+);
