@@ -161,7 +161,7 @@ block('category-rubricator')(
 /*--------------------------------------- modifier _wrapper_none --------------------------------------*/
 block('category-rubricator').mod('wrapper', 'none')(
     js()(true),
-    def()(function(){
+    replace().once()(function(){
         var bemJSON = [
             {
                 elem: 'header',
@@ -212,10 +212,10 @@ block('category-rubricator').mod('wrapper', 'none')(
             }
         ];
 
-        return applyCtx({
+        return {
             tag: '',
             content: bemJSON
-        });
+        };
     }),
 
     elem('header')(

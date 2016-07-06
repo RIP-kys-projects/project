@@ -261,7 +261,7 @@ block('category-list')(
 
 /*--------------------------------------------  modifier _wrapper_none  --------------------------------------------*/
 block('category-list').mod('wrapper', 'none')(
-	def()(function(){
+	replace().once()(function(){
 		var items = this.ctx.list.map(function(item){
             var bemJSON;
             // переменные, чтобы не повторять разметку несколько раз
@@ -479,10 +479,10 @@ block('category-list').mod('wrapper', 'none')(
             return bemJSON;
         });
 
-        return applyCtx({
+        return {
             tag : '',
             content: items
-        })
+        }
     }),
 
     elem('activities-wrap')(

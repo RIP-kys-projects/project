@@ -1,7 +1,7 @@
 block('header-moderator')(
 	tag()('header'),
-	def()(function(){
-        return applyCtx([
+	replace().once()(function(){
+        return [
             {
                 block: 'header-moderator',
                 content: [
@@ -106,6 +106,6 @@ block('header-moderator')(
             {
                 block: 'header-push'
             }
-        ])
+        ]
     })
 )

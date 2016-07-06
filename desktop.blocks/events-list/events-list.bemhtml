@@ -1,5 +1,5 @@
 block('events-list')(
-	def()(function(){
+	replace().once()(function(){
 		function templateGenerator(arr){
 		    return arr.map(function(item){
 		        return {
@@ -128,7 +128,7 @@ block('events-list')(
 
         }
 
-        return applyCtx(content);
+        return content;
     }),
 
 	elem('item')(

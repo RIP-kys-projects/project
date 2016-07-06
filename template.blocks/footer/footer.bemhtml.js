@@ -7,7 +7,7 @@ block('footer')(
                 {
                     block: 'col-md-5',
                     mix: { block: 'row'},
-                    content: 'Генеральная лицензия Банка России №1326 от 16 января 2015 г.'
+                    content: 'Генеральная лицензия от 16 января 2015 г.'
                 },
                 {
                     block: 'col-md-7',
@@ -17,19 +17,19 @@ block('footer')(
                         'footer-menu': [
                             {
                                 elem: 'item',
-                                url: 'http://club.alfabank.ru/about/ ',
+                                url: '#',
                                 content: 'О Клубе Клиентов'
                             },
                             {
                                 elem: 'item',
-                                url: 'http://club.alfabank.ru/contacts/',
+                                url: '#',
                                 content: 'Обратная связь'
                             },
                             {
                                 elem: 'item',
-                                url: 'http://alfabank.ru/sme/',
-                                content: 'Альфа-Банк для бизнеса'
-                            },
+                                url: '#',
+                                content: 'Для бизнеса'
+                            }
                         ]
                     }
                 },
@@ -39,7 +39,7 @@ block('footer')(
                     content:{
                         block: 'footer',
                         elem: 'copy',
-                        content: '© 2014, Альфа-Банк'
+                        content: '© 2014'
                     }
                 },
                 {
@@ -50,17 +50,17 @@ block('footer')(
                             {
                                 elem: 'item',
                                 elemMods: { type: 'tw' },
-                                url: 'http://twitter.com/alfabank_sme'
+                                url: '#'
                             },
                             {
                                 elem: 'item',
                                 elemMods: { type: 'vk' },
-                                url: 'http://vkontakte.ru/alfabank_sme'
+                                url: '#'
                             },
                             {
                                 elem: 'item',
                                 elemMods: { type: 'fb' },
-                                url: 'http://www.facebook.com/alfabank.sme'
+                                url: '#'
                             }
                         ]
                     }

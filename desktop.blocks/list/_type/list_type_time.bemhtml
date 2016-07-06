@@ -1,10 +1,10 @@
 block('list').mod('type', 'time')(
 	tag()('ul'),
-	def()(function(){
-        return applyCtx({
+	replace().once()(function(){
+        return {
             block: 'list_type_time-wrapper',
             content: this.ctx
-        })
+        }
     }),
     content()(function(){
         return this.ctx.items.map(function(item){

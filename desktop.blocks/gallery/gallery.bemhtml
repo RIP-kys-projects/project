@@ -1,9 +1,9 @@
 block('gallery')(
-	def()(function(){
-	    return applyCtx({
+	replace().once()(function(){
+	    return {
 	        block: 'row',
 	        content: this.ctx
-	    })
+	    }
 	}),
 	content()(function(){
 		return this.ctx.items.map(function(item){

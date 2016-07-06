@@ -1,6 +1,6 @@
 block('carousel-service')(
-	def()(function(){
-		return applyCtx({
+	replace().once()(function(){
+		return {
             block: 'carousel-service-wrapper',
             content: [
                 {
@@ -45,6 +45,6 @@ block('carousel-service')(
                      ]
                 }
             ]
-        })
+        }
 	})
 )
