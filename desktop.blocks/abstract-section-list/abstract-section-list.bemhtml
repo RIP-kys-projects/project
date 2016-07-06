@@ -106,7 +106,7 @@ block('abstract-section-list').mod('img-align', 'right')(
 )
 
 block('abstract-section-list').mod('wrapper', 'none')(
-	def()(function(){
+	replace().once()(function(){
 		var items = this.ctx.items.map(function(item){
 
 		   return {
@@ -117,9 +117,9 @@ block('abstract-section-list').mod('wrapper', 'none')(
 		   }
 		});
 
-        return applyCtx({
+        return {
             tag : '',
             content: items
-        })
+        }
     })
 )

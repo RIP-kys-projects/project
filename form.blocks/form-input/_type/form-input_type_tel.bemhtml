@@ -1,6 +1,6 @@
 block('form-input').mod('type', 'tel')(
-	def()(function(){
-	    return applyCtx({
+	replace().once()(function(){
+	    return {
 	        block: 'form-input-wrapper',
 	        content: [
 	            {
@@ -13,7 +13,7 @@ block('form-input').mod('type', 'tel')(
 	                content: { block: 'fa fa-check'}
 	            }
 	        ]
-	    })
+	    }
 	}),
 	tag()('input'),
 	mix()(function(){

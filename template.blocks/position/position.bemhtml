@@ -1,6 +1,6 @@
 block('position')(
-	def()(function(){
-	    return applyCtx([
+	replace().once()(function(){
+	    return [
 	        {
 	            block: this.ctx.block,
 	            mods: this.ctx.mods,
@@ -10,6 +10,6 @@ block('position')(
                 block: 'position',
                 elem: 'clearfix'
             }
-	    ])
+	    ]
 	})
 )

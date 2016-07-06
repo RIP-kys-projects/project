@@ -1,9 +1,9 @@
 block('screen').mod('half', true)(
-    def()(function(){
-        return applyCtx({
+    replace().once()(function(){
+        return {
             block: 'row',
    			mods: { margin: '0' },
             content: this.ctx
-        })
+        }
     })
 );

@@ -1,6 +1,6 @@
 block('form-input')(
-	def()(function(){
-		return applyCtx({
+	replace().once()(function(){
+		return {
 			block: 'form-input-wrapper',
 			mods: this.ctx.mods,
 			content: [
@@ -10,7 +10,7 @@ block('form-input')(
 					content: { block: 'fa fa-check'}
 				}
 			]
-		})
+		}
 	}),
 	tag()('input'),
 	mix()(function(){
